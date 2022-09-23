@@ -18,6 +18,19 @@ img{
 a{
     text-decoration: none;
 }
+.container{
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media(min-width:768px){
+    main{
+        width: 50%;
+        margin-left: auto;
+        margin-right: 100;
+    }
+}
+
 /*menu*/
 .menu-navigation{
     display:flex;
@@ -35,6 +48,23 @@ a{
 }
 .link-search,.link-news,.link-menu{
     display: none;
+}
+@media(min-width:768px){
+    .img-complete{
+        display: block;
+    }
+    .img-frame{
+        display: none;
+    }
+    .link-search{
+        display: inline-block;
+    }
+    .link-news{
+        display: inline-block;
+    }
+    .link-menu{
+        display: inline-block;
+    }
 }
 .link-login{
     color: black;
@@ -62,6 +92,7 @@ a{
     background-color: var(--primary);
     color:black;
 }
+
 /*header*/
 header{
     display: flex;
@@ -103,13 +134,20 @@ div.border{
     margin-right: 47%;
     margin-left: 47%;
 }
+
 /*main news section*/
+@media(min-width:768px){
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
 .main-news{
     position: relative;
 }
 .main-news-text{
     position: absolute;
-    top:520px;
+    top:500px;
     left: 20px;
 }
 .main-news-text h3{
@@ -133,27 +171,46 @@ div.border{
 .main-news-text i{
     margin-right: 5px;
 }
+
 /*secondary news*/
+@media(min-width:768px){
+    .secondary-news-container{
+        display:flex;
+        justify-content: space-between;
+    }
+}
 .secondary-news{
     margin-bottom: 7px;
     position: relative;
+    overflow: hidden;
+}
+@media(min-width:768px){
+    .secondary-news{
+        width: 250;
+        height: 350;
+    }
 }
 .secondary-news img{
     min-width: 100%;
     margin-top: 20px;
+}
+.secondary-news:hover img{
+    transform: scale(1.1);
+    border-bottom: 5px solid rgb(244, 208, 5);
+    cursor: pointer;
 }
 .secondary-news-text{
     background-color: white;
     color:black;
     margin-top: -3px;
     padding: 20px;
-    border-top: 5px solid rgb(244, 208, 5);
+    
 }
 .secondary-news-text h3{
     text-transform: uppercase;
     font-size: small;
     margin-bottom: 20px;
-    margin-top: -3px;
+    margin-top: 3px;
     letter-spacing: 2px;  
     opacity: 0.5;
 }
@@ -171,6 +228,39 @@ div.border{
 }
 .secondary-news-text i{
     margin-right: 5px;
+}
+
+/*today section*/
+.todays-container h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-left: 5px solid rgb(244, 208, 5);
+    padding-left: 20px;
+    margin-left: -15px;
+}
+.pick-item{
+    display: flex;
+}
+.pick-item img{
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:768px){
+
+
 }
 
 
