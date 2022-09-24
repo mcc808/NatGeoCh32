@@ -51,10 +51,10 @@ a{
 }
 @media(min-width:768px){
     .img-complete{
-        display: block;
+        display: none;
     }
     .img-frame{
-        display: none;
+        display: block;
     }
     .link-search{
         display: inline-block;
