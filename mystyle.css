@@ -259,7 +259,7 @@ div.border{
 @media(min-width:768px){
     .pick-item p{
         text-transform: lowercase;
-        font-size: smaller
+        font-size: smaller 
     }
 }
 .pick-item img{
